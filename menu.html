@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Food Delivery App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="restaurants.html">Restaurants</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="order-tracking.html">Track Order</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Menu - Italian Delight</h1>
+        <section class="menu-items">
+            <div class="menu-item">
+                <h3>Pasta Alfredo</h3>
+                <p>$12.99</p>
+                <button onclick="addToCart('Pasta Alfredo')">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h3>Margherita Pizza</h3>
+                <p>$15.99</p>
+                <button onclick="addToCart('Margherita Pizza')">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Food Delivery App. All rights reserved.</p>
+    </footer>
+    <script>
+        function addToCart(itemName) {
+            alert(`${itemName} has been added to your cart!`);
+        }
+    </script>
+
+    <script src="js/menu.js"></script>
+</body>
+</html>
