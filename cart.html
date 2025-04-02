@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Food Delivery App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="restaurants.html">Restaurants</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="order-tracking.html">Track Order</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Your Cart</h1>
+        <section class="cart-items">
+            <div class="cart-item">
+                <h3>Pasta Alfredo</h3>
+                <p>$12.99</p>
+                <button onclick="removeFromCart('Pasta Alfredo')">Remove</button>
+                <button onclick="orderConfirm('Pasta Alfredo')">Checkout</button>
+
+            </div>
+            <div class="cart-item">
+                <h3>Margherita Pizza</h3>
+                <p>$15.99</p>
+                <button onclick="removeFromCart('Margherita Pizza')">Remove</button>
+                <button onclick="orderConfirm('Margherita Pizza')">Checkout</button>
+
+            </div>
+        </section>
+        <div class="checkout">
+            <h2>Total: $28.98</h2>
+            <button onclick="orderConfirm('Pasta Alfredo and Margherita Pizza')">Checkout</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Food Delivery App. All rights reserved.</p>
+    </footer>
+    <script>
+        function removeFromCart(itemName) {
+            alert(`${itemName} has been removed from your cart!`);
+        }
+
+        function orderConfirm(itemName) {
+            if(Total="$15.99") {
+                alert(`Margherita Pizza order has been confirmed!!`);
+            }
+
+            if(Total="$12.99") {
+                alert(`Pasta Alfredo order has been confirmed!!`);
+
+            }
+            if(Total="$28.98") {
+                alert(`Pasta Alfredo and Margherita Pizza order has been confimed!!`);
+            }
+        }
+    </script>
+
+    <script src="js/cart.js"></script>
+</body>
+</html>
